@@ -1,4 +1,4 @@
-import  {
+import {
   FormContainer,
   Header,
   LoginContainer,
@@ -7,17 +7,22 @@ import  {
   StyledInput,
   StyledButton,
 } from './Login.style';
-import {useNavigate} from 'react-router-dom'
+
 import mealSvg from '../../assets/meal.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-const navigate = useNavigate(-1)
+  const navigate = useNavigate();
 
-  const handleSubmit = (e)=> {
-    e.prevendefault();
-    navigate('/')
-    
-  }
+  const userInfo = {
+    username: 'ahmet',
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sessionStorage.setItem('user', JSON.stringify(userInfo));
+    navigate(-1);
+  };
   return (
     <LoginContainer>
       <FormContainer>
