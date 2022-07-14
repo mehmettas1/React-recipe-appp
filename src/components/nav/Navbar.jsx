@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Nav, { Logo, Menu, MenuLink, Hamburger } from './Navbar.style';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
@@ -9,7 +8,7 @@ const Navbar = () => {
   return (
     <Nav justify="space-between" wrap="wrap">
       <Logo to="/">
-        <i>{'<Clarusway/>'}</i>
+        <i>{'<MEHMET/>'}</i>
         <span>Recipe</span>
       </Logo>
 
