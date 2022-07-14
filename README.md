@@ -1,4 +1,4 @@
-- <a href="https://react-recipe-appp.vercel.app/" target="_blank" >Recipe App</a>
+- <a href="https://react-recipe-appp.vercel.app/" target="_blank" >CLick Me</a>
 
 # Getting Started with Create React App
 
