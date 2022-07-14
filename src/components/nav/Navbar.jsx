@@ -1,21 +1,23 @@
+import { Link } from "react-router-dom";
+import Nav,{} from "./Navbar.style"
+
 
 
 const Navbar = () => {
   return (
-    <nav>
-     <div>
-     <i>{"<Mehmet/>"}</i>
-      <span>Recipe</span>
+    <Nav>
       <div>
-        <Link to= "/">Home</Link>
-        <Link to= "about">About</Link>
-        <Link to= "register">Register</Link>
-        <Link to= "login">Logout</Link>
+        <i>{"<Mehmet/>"}</i>
+        <span>Recipe</span>
+        <div>
+          <Link to="/">Home</Link>
+          <Link to="about">About</Link>
+          <Link to="register">Register</Link>
+          <Link to="login">Logout</Link>
+        </div>
       </div>
-     </div>
+    </Nav>
+  );
+};
 
-    </nav>
-  )
-}
-
-export default Navbar
+export default Navbar;

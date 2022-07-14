@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import Flex from '../../components/globalStyles/Flex';
 
-const Nav = styled.div`
-
+const Nav = styled(Flex)`
+  padding: 1rem 2rem;
+  background: ${({ theme }) => theme.colors.navbarBgColor};
 `;
 
-export default Div;
+export default Nav;
