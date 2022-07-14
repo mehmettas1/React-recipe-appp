@@ -7,5 +7,4 @@ const Flex = styled.div`
   flex-wrap: ${({ wrap }) => wrap && wrap};
 `;
 
-
 export default Flex;
